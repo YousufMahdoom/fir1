@@ -5,7 +5,7 @@ $activePage = "sublimation";
 include __DIR__ . '/php/header.php';
 ?>
 
-<main class="w-full pt-16 sm:pt-20 bg-surface relative flex-1 overflow-x-hidden">
+<main class="w-full bg-surface relative flex-1 overflow-x-hidden">
 <main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
 <!-- SECTION 1: HERO OVERLAY & ENGINE INTRO -->
 <section class="relative w-full overflow-hidden bg-surface-container-lowest -mt-28 pt-36 pb-20">
@@ -70,7 +70,7 @@ include __DIR__ . '/php/header.php';
 <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
 <div>
 <span class="font-label-xs text-label-xs uppercase tracking-widest text-primary font-bold">Interactive Sublimation Engine v3.2</span>
-<h2 class="font-headline-lg text-headline-lg uppercase text-secondary reveal-on-scroll">Real-Time Team Jersey Configurator</h2>
+<h2 class="font-headline-lg text-headline-lg uppercase text-secondary">Real-Time Team Jersey Configurator</h2>
 </div>
 <div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
 <span class="w-2.5 h-2.5 rounded-full bg-secondary-container inline-block"></span>
@@ -310,12 +310,12 @@ include __DIR__ . '/php/header.php';
 <div class="font-label-xs text-label-xs text-primary">160 GSM • Hyper-Breathe</div>
 <div class="font-body-sm text-label-xs text-on-surface-variant mt-1">Recommended for Football &amp; Running</div>
 </div>
-<div class="fabric-card p-space-sm bg-surface-container-lowest rounded-lg cursor-pointer hover:bg-surface-container-high transition-all tilt-card" onclick="selectFabric('Pro-Fit Interlock (180 GSM)', this)">
+<div class="fabric-card p-space-sm bg-surface-container-lowest rounded-lg cursor-pointer hover:bg-surface-container-high transition-all" onclick="selectFabric('Pro-Fit Interlock (180 GSM)', this)">
 <div class="font-label-sm text-label-md text-secondary font-bold">Pro-Fit Interlock</div>
 <div class="font-label-xs text-label-xs text-outline">180 GSM • Smooth Glide</div>
 <div class="font-body-sm text-label-xs text-on-surface-variant mt-1">Ideal for Cricket &amp; Volleyball</div>
 </div>
-<div class="fabric-card p-space-sm bg-surface-container-lowest rounded-lg cursor-pointer hover:bg-surface-container-high transition-all tilt-card" onclick="selectFabric('Heavy Rugged Twill (220 GSM)', this)">
+<div class="fabric-card p-space-sm bg-surface-container-lowest rounded-lg cursor-pointer hover:bg-surface-container-high transition-all" onclick="selectFabric('Heavy Rugged Twill (220 GSM)', this)">
 <div class="font-label-sm text-label-md text-secondary font-bold">Rugged Poly-Shield</div>
 <div class="font-label-xs text-label-xs text-outline">220 GSM • Tear-Resistant</div>
 <div class="font-body-sm text-label-xs text-on-surface-variant mt-1">Designed for Rugby Collisions</div>
@@ -412,7 +412,7 @@ include __DIR__ . '/php/header.php';
 <!-- Section Header -->
 <div class="max-w-2xl mb-space-xl">
 <span class="font-label-xs text-label-xs uppercase tracking-widest text-primary font-bold">Precision Textile Manufacturing</span>
-<h2 class="font-headline-lg text-headline-lg uppercase text-secondary mt-1 reveal-on-scroll">Engineered For Zero Decay In Heavy Match Play</h2>
+<h2 class="font-headline-lg text-headline-lg uppercase text-secondary mt-1">Engineered For Zero Decay In Heavy Match Play</h2>
 <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
           Sublimation is a molecular bond, not an ink layer glued on top of polyester. Heat fuses disperse dyes directly inside the polymer filament core.
         </p>
@@ -422,7 +422,7 @@ include __DIR__ . '/php/header.php';
 <!-- Card 1 -->
 <div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between shadow-sm">
 <div>
-<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-space-md text-primary tilt-card">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-space-md text-primary">
 <span class="material-symbols-outlined text-[28px]">palette</span>
 </div>
 <h3 class="font-headline-sm text-headline-sm uppercase text-secondary mb-space-xs">Japanese &amp; Italian Dyes</h3>
@@ -438,7 +438,7 @@ include __DIR__ . '/php/header.php';
 <!-- Card 2 -->
 <div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between shadow-sm">
 <div>
-<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-space-md text-secondary-fixed tilt-card">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-space-md text-secondary-fixed">
 <span class="material-symbols-outlined text-[28px]">precision_manufacturing</span>
 </div>
 <h3 class="font-headline-sm text-headline-sm uppercase text-secondary mb-space-xs">Laser-Cut Pattern Sizing</h3>
@@ -454,7 +454,7 @@ include __DIR__ . '/php/header.php';
 <!-- Card 3 -->
 <div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between shadow-sm">
 <div>
-<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-space-md text-tertiary tilt-card">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-space-md text-tertiary">
 <span class="material-symbols-outlined text-[28px]">straighten</span>
 </div>
 <h3 class="font-headline-sm text-headline-sm uppercase text-secondary mb-space-xs">Anti-Chafe Flat-Lock Stitch</h3>
@@ -474,7 +474,7 @@ include __DIR__ . '/php/header.php';
 <span class="font-label-xs text-label-xs uppercase tracking-widest text-secondary-fixed font-bold">Industrial Comparison</span>
 <h3 class="font-headline-sm text-headline-sm uppercase text-secondary">Why Modern Sports Demands Full Sublimation</h3>
 </div>
-<div class="responsive-table-wrapper"><table class="w-full text-left font-body-sm text-body-sm">
+<div class="responsive-table-wrapper w-full overflow-x-auto"><table class="w-full text-left font-body-sm text-body-sm">
 <thead>
 <tr class="bg-surface-container font-label-md text-label-md uppercase tracking-wider text-outline">
 <th class="p-space-sm rounded-l">Performance Attribute</th>
@@ -536,7 +536,7 @@ include __DIR__ . '/php/header.php';
 <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
 <div>
 <span class="font-label-xs text-label-xs uppercase tracking-widest text-primary font-bold">Field Proven Across South Asia</span>
-<h2 class="font-headline-lg text-headline-lg uppercase text-secondary reveal-on-scroll">Recent Factory Production Deployments</h2>
+<h2 class="font-headline-lg text-headline-lg uppercase text-secondary">Recent Factory Production Deployments</h2>
 </div>
 <p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
           Supplying collegiate championships, premier cricket club tournaments, corporate mercantile leagues, and esports teams with race-ready custom uniforms.
@@ -697,7 +697,7 @@ include __DIR__ . '/php/header.php';
 <!-- Drag and Drop Vector Logo / Mockup Upload Box -->
 <div>
 <label class="font-label-md text-label-md uppercase tracking-wider text-secondary block mb-1.5">Upload Team Crest / Vector Artwork / Mockup</label>
-<div class="bg-surface-container rounded-xl p-space-lg text-center cursor-pointer hover:bg-surface-container-high transition-all tilt-card">
+<div class="bg-surface-container rounded-xl p-space-lg text-center cursor-pointer hover:bg-surface-container-high transition-all">
 <input accept=".ai,.pdf,.eps,.png,.jpg,.svg" class="hidden" id="vector-file-input" onchange="displaySelectedFile(this)" type="file">
 <label class="cursor-pointer flex flex-col items-center justify-center" for="vector-file-input">
 <span class="material-symbols-outlined text-[36px] text-primary mb-2">cloud_upload</span>

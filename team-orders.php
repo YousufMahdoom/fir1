@@ -5,7 +5,7 @@ $activePage = "team-orders";
 include __DIR__ . '/php/header.php';
 ?>
 
-<main class="w-full pt-16 sm:pt-20 bg-surface relative flex-1 overflow-x-hidden">
+<main class="w-full bg-surface relative flex-1 overflow-x-hidden">
 <main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
 <!-- HERO: High-impact technical industrial athletic introduction -->
 <section class="relative w-full overflow-hidden bg-surface-container-lowest py-space-xl">
@@ -29,11 +29,11 @@ include __DIR__ . '/php/header.php';
             Custom team kits, travel tracksuits, and equipment packages engineered for Schools, Sports Academies, Corporate Leagues, and Professional Clubs across Sri Lanka and beyond.
           </p>
 <div class="flex flex-wrap items-center gap-space-sm mb-space-xl">
-<a class="inline-flex items-center justify-center gap-space-xs bg-secondary-container text-on-secondary font-label-lg text-label-lg uppercase px-space-lg py-3 rounded font-bold hover:bg-secondary-fixed-dim transition-all shadow-xl" href="team-orders.html#quote-engine">
+<a class="inline-flex items-center justify-center gap-space-xs bg-secondary-container text-on-secondary font-label-lg text-label-lg uppercase px-space-lg py-3 rounded font-bold hover:bg-secondary-fixed-dim transition-all shadow-xl" href="#quote-engine">
 <span class="">LAUNCH LIVE ESTIMATOR</span>
 <span class="material-symbols-outlined text-[18px]">arrow_downward</span>
 </a>
-<a class="inline-flex items-center justify-center gap-space-xs bg-surface-container-high text-on-surface hover:bg-surface-bright font-label-lg text-label-lg uppercase px-space-md py-3 rounded font-semibold transition-all" href="team-orders.html#quick-inquiry">
+<a class="inline-flex items-center justify-center gap-space-xs bg-surface-container-high text-on-surface hover:bg-surface-bright font-label-lg text-label-lg uppercase px-space-md py-3 rounded font-semibold transition-all" href="#quick-inquiry">
 <span class="">RAPID TENDER INQUIRY</span>
 <span class="material-symbols-outlined text-[18px]">bolt</span>
 </a>
@@ -88,7 +88,7 @@ include __DIR__ . '/php/header.php';
 <span class="material-symbols-outlined text-[16px]">calculate</span>
 <span class="">Real-time Wholesale Matrix</span>
 </div>
-<h2 class="font-headline-lg text-headline-lg uppercase text-secondary reveal-on-scroll">
+<h2 class="font-headline-lg text-headline-lg uppercase text-secondary">
             DYNAMIC BULK QUOTE GENERATOR
           </h2>
 </div>
@@ -370,7 +370,7 @@ include __DIR__ . '/php/header.php';
 </div>
 <!-- Action CTAs -->
 <div class="flex flex-col gap-space-xs pt-space-xs">
-<a class="w-full inline-flex items-center justify-center gap-space-xs bg-secondary-container text-on-secondary font-label-lg text-label-lg uppercase py-3 rounded font-bold hover:bg-secondary-fixed-dim transition-all shadow-md" href="team-orders.html#quick-inquiry">
+<a class="w-full inline-flex items-center justify-center gap-space-xs bg-secondary-container text-on-secondary font-label-lg text-label-lg uppercase py-3 rounded font-bold hover:bg-secondary-fixed-dim transition-all shadow-md" href="#quick-inquiry">
 <span class="">LOCK IN THIS QUOTE &amp; SUBMIT</span>
 <span class="material-symbols-outlined text-[18px]">send</span>
 </a>
@@ -393,7 +393,7 @@ include __DIR__ . '/php/header.php';
 <!-- Section Headline -->
 <div class="flex flex-col items-start mb-space-lg">
 <span class="font-label-md text-label-md uppercase tracking-wider text-secondary-fixed mb-1">Tailored Manufacturing Solutions</span>
-<h2 class="font-headline-lg text-headline-lg uppercase text-secondary reveal-on-scroll">SPECIAL INSTITUTIONAL PROGRAMS</h2>
+<h2 class="font-headline-lg text-headline-lg uppercase text-secondary">SPECIAL INSTITUTIONAL PROGRAMS</h2>
 <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-space-xs">
           Engineered procurement structures designed specifically for educational institutes, corporate mercantile federations, and high-turnover sports academies.
         </p>
@@ -430,7 +430,7 @@ include __DIR__ . '/php/header.php';
 </div>
 </div>
 </div>
-<a class="inline-flex items-center justify-between p-space-sm bg-surface-container-high hover:bg-surface-bright rounded text-secondary font-label-md text-label-md uppercase tracking-wider transition-all" href="team-orders.html#quick-inquiry">
+<a class="inline-flex items-center justify-between p-space-sm bg-surface-container-high hover:bg-surface-bright rounded text-secondary font-label-md text-label-md uppercase tracking-wider transition-all" href="#quick-inquiry">
 <span class="">Request School Program Brochure</span>
 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
@@ -465,7 +465,7 @@ include __DIR__ . '/php/header.php';
 </div>
 </div>
 </div>
-<a class="inline-flex items-center justify-between p-space-sm bg-surface-container-high hover:bg-surface-bright rounded text-secondary font-label-md text-label-md uppercase tracking-wider transition-all" href="team-orders.html#quick-inquiry">
+<a class="inline-flex items-center justify-between p-space-sm bg-surface-container-high hover:bg-surface-bright rounded text-secondary font-label-md text-label-md uppercase tracking-wider transition-all" href="#quick-inquiry">
 <span class="">Inquire Mercantile Expedited</span>
 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
@@ -500,7 +500,7 @@ include __DIR__ . '/php/header.php';
 </div>
 </div>
 </div>
-<a class="inline-flex items-center justify-between p-space-sm bg-surface-container-high hover:bg-surface-bright rounded text-secondary font-label-md text-label-md uppercase tracking-wider transition-all" href="team-orders.html#quick-inquiry">
+<a class="inline-flex items-center justify-between p-space-sm bg-surface-container-high hover:bg-surface-bright rounded text-secondary font-label-md text-label-md uppercase tracking-wider transition-all" href="#quick-inquiry">
 <span class="">Explore Academy Bundles</span>
 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
@@ -520,7 +520,7 @@ include __DIR__ . '/php/header.php';
 <span class="material-symbols-outlined text-[16px]">timer</span>
 <span class="">RAPID FACTORY PROTOCOL</span>
 </div>
-<h2 class="font-headline-lg text-headline-lg uppercase text-secondary mb-space-sm reveal-on-scroll">
+<h2 class="font-headline-lg text-headline-lg uppercase text-secondary mb-space-sm">
                 SUBMIT ROSTER SPECIFICATION
               </h2>
 <p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
@@ -650,7 +650,7 @@ include __DIR__ . '/php/header.php';
 <!-- Section Header -->
 <div class="text-center max-w-2xl mx-auto mb-space-lg">
 <span class="font-label-md text-label-md uppercase tracking-wider text-primary">Clear Operational Guidelines</span>
-<h2 class="font-headline-lg text-headline-lg uppercase text-secondary mt-1 reveal-on-scroll">
+<h2 class="font-headline-lg text-headline-lg uppercase text-secondary mt-1">
           FAQS FOR SQUAD MANAGERS &amp; COACHES
         </h2>
 <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
@@ -739,7 +739,7 @@ include __DIR__ . '/php/header.php';
 <span class="material-symbols-outlined text-[18px]">call</span>
 <span class="">+94 77 123 4567</span>
 </a>
-<a class="bg-secondary-container text-on-secondary hover:bg-secondary-fixed-dim font-label-lg text-label-lg uppercase px-space-md py-3 rounded font-bold transition-all shadow-md" href="team-orders.html#quick-inquiry">
+<a class="bg-secondary-container text-on-secondary hover:bg-secondary-fixed-dim font-label-lg text-label-lg uppercase px-space-md py-3 rounded font-bold transition-all shadow-md" href="#quick-inquiry">
           UPLOAD TENDER RFP
         </a>
 </div>

@@ -5,7 +5,7 @@ $activePage = "shop";
 include __DIR__ . '/php/header.php';
 ?>
 
-<main class="w-full pt-16 sm:pt-20 bg-surface relative flex-1 overflow-x-hidden">
+<main class="w-full bg-surface relative flex-1 overflow-x-hidden">
 <main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
 <!-- Subtle Ambient Glow -->
 <div class="relative w-full overflow-hidden">
@@ -122,7 +122,7 @@ include __DIR__ . '/php/header.php';
 <div class="flex items-center justify-between pb-space-xs border-b border-surface-container-highest lg:border-none">
 <div class="flex items-center gap-2">
 <span class="material-symbols-outlined text-primary text-[20px]">filter_alt</span>
-<h2 class="font-headline-sm text-headline-sm uppercase text-secondary tracking-wide reveal-on-scroll">Refine Gear</h2>
+<h2 class="font-headline-sm text-headline-sm uppercase text-secondary tracking-wide">Refine Gear</h2>
 </div>
 <button class="text-outline hover:text-primary font-label-xs text-label-xs uppercase tracking-wider transition-colors">Reset</button>
 </div>
@@ -327,10 +327,10 @@ include __DIR__ . '/php/header.php';
 <!-- ======================= RIGHT PRODUCT CATALOG ======================= -->
 <main class="lg:col-span-9 flex flex-col gap-space-lg">
 <!-- Product Grid Container: Switchable through JS -->
-<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md" id="product-grid">
+<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 lg:gap-6" id="product-grid">
 <!-- PRODUCT 1: CRICKET MATCH KIT -->
 <article class="group bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-t-xl">
 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-spec modern custom sublimated cricket colored match jersey with sharp electric volt and cobalt geometric dynamic patterns, displayed on a mannequin in a dark industrial factory setting with subtle rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE8jJv2sgfIbIVC-nk2D5tYajqIRAPyRdL5D7c3UfSRXKxkyFfWevauc3IzcWrMfPH-v_wiOxRfUPZgcXTa73UZEDFfFea-XxW0isizSCDpLw6QHjHhrSzjcLanwFQa5sh6RbYcBpn622Awg6ufLAC6Y8PEuQYU536lD01vDcQJI83eMEpy_Ozjm10rpT81uWKeSU1nA80CnHvAMJhzxdwprT34zothkw6ymgRmiYWB4wxAHMfqhZSMw">
 <div class="absolute top-2 left-2 flex flex-col gap-1">
 <span class="bg-tertiary-container text-on-tertiary-container font-label-xs text-label-xs px-2 py-0.5 rounded font-bold uppercase tracking-wider shadow-sm">-25% FLASH</span>
@@ -380,7 +380,7 @@ include __DIR__ . '/php/header.php';
 </article>
 <!-- PRODUCT 2: FOOTBALL HOME PRO JERSEY -->
 <article class="group bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-t-xl">
 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Athletic slim fit soccer jersey in royal cobalt blue with sharp white collar accents and industrial sublimation crest on high-performance athletic display." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCt4krYXHJitKltakbHJAre4nNOj7csf0dHeV_pgeAZlNHFQ1rUEz0XC0Ld54eHxUJnPqsUcLUrzz1I-HkTZC72nX4gyvzzWLnLg64bYdZfqfHqaDn9SRmiKUFbbHLbhlJ5zSbDVWB5BcmFPrW7llXWiLq57FJQagsV7oBn1bDyYC1lxcACWy1l2c4vbUo2pV-9iSdVc0AotBDa6NIAyTfoIxyhaMoOTPlKzFI-_3VSxmXvIMgPunaPw">
 <div class="absolute top-2 left-2 flex flex-col gap-1">
 <span class="bg-primary-container text-on-primary-container font-label-xs text-label-xs px-2 py-0.5 rounded font-bold uppercase tracking-wider shadow-sm">TOP SELLER</span>
@@ -430,7 +430,7 @@ include __DIR__ . '/php/header.php';
 </article>
 <!-- PRODUCT 3: BASKETBALL REVERSIBLE -->
 <article class="group bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-t-xl">
 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Dynamic reversible basketball tank jersey dual-tone black and electric volt yellow layout with breathable open-hole mesh panels on dark technical studio background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa2v2YIV7qgmq8i2kGCoaB729kJMw9uu1iN4q4S0hwAslcWsSq-uyxds4zWTzezHwXO-Al7uAHW-GtVEpwwlU0WF5U77bKT88gIItSe_QS3ktoctss5XJBNhDAIZ2joFggzE2xd2Bc9s4WqE4Y7xgY7KrisfMpLcyftuX3x4k6LM081qyPbPHVbb-C3Hohb9GyN2lnshT6qMu-ZTU3P9UfxuGUsqF3QyInzEP7ghg9vMD7AOS2UNutlQ">
 <div class="absolute top-2 left-2 flex flex-col gap-1">
 <span class="bg-surface-container-highest text-secondary font-label-xs text-label-xs px-2 py-0.5 rounded font-bold uppercase tracking-wider shadow-sm">REVERSIBLE 2-IN-1</span>
@@ -470,7 +470,7 @@ include __DIR__ . '/php/header.php';
 </article>
 <!-- PRODUCT 4: RUGBY HEAVY-TENSILE MATCH KIT -->
 <article class="group bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-t-xl">
 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Rugby match kit reinforced heavy-duty collar with crimson red and charcoal geometric ripstop paneling shot with stark athletic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgCsD2lNQP97tBNSR5YiJ-efS6qkPRqBWiUh4Pt7lxSGUNOFipJZJWHwd7x3xmxm9evMsrMt05NR9ImriBlKwVZNsKOgGIXpa57__ZgmNoIEHGs2RHq-bBJVRy7jhLIo1an5LV7QmKrzAKRtDsHCHyIU2jkwxXfB7bxMe1hvbEx3sw8658oRN7nMKbjepAwvV2BGIRw1wNeAaa_hbdME89fD2B6Ur1G_2yJkXDBjYGUa1bAaGrLaL9LA">
 <div class="absolute top-2 left-2 flex flex-col gap-1">
 <span class="bg-surface-container-lowest/90 text-primary font-label-xs text-label-xs px-2 py-0.5 rounded font-bold tracking-wider backdrop-blur-md uppercase">260 GSM REINFORCED</span>
@@ -510,7 +510,7 @@ include __DIR__ . '/php/header.php';
 </article>
 <!-- PRODUCT 5: PRO TRACKSUIT -->
 <article class="group bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-t-xl">
 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-neck full zip athletic warmup tracksuit jacket in deep carbon black with razor-thin electric blue shoulder piping on athletic model." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwAjDKBiLKfVGpgR-HiL7jyyMJBYq9P5RdcJ-VTUbLeLzMWm4MavbfSqAHdJLUNbvhviVlnuX1JqKHh5dghJEX1Osfil2LmvKUbO7GQQ32VfbjCUWITBvOZOZ-Q4waLtIxpXi4ve1IkuKomIuBtHz6urGRslGhUkKWnWC-gXk2_Mw8F4v-ULj4agkX4UIQ4zkRIIVnqH78pVD3bgte5lCLHy0xgveFVEa22rDIVluNkxvW35g1_9KF5w">
 <div class="absolute top-2 left-2 flex flex-col gap-1">
 <span class="bg-primary-container text-on-primary-container font-label-xs text-label-xs px-2 py-0.5 rounded font-bold uppercase tracking-wider shadow-sm">NEW SPEC</span>
@@ -550,7 +550,7 @@ include __DIR__ . '/php/header.php';
 </article>
 <!-- PRODUCT 6: CRICKET TEST WHITES -->
 <article class="group bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-t-xl">
 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Traditional pristine white cricket match polo shirt and trousers kit with subtle dark green woven team collar trims hanging in professional dressing room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9HnZcR7WmJxxCSBCJfpezhsrkv0CRKgIrfwsSEVDu1mYXGRMA2vbra7uEnqc1ekQ3s6qyZIidTMIl-7e7upUYjhWia1MsTTy7n5XiV_0dpZb107roV_uSq6B4O_IgjCgoAS8t7f5pbYaq5o4XvKxxx0sBUDUoQkIaAEDNLaRre7AXW8pfyxgQQ5SCne8SG_uIBqfTLldVG0QIdHekLdS4Fvh7zTFRBOgjphmNvYQ6RBRKMhzBXAOdMA">
 <button aria-label="Add to Wishlist" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 hover:bg-surface-bright text-on-surface hover:text-tertiary flex items-center justify-center transition-all shadow-sm">
 <span class="material-symbols-outlined text-[18px]">favorite</span>
@@ -587,7 +587,7 @@ include __DIR__ . '/php/header.php';
 </article>
 <!-- PRODUCT 7: VOLLEYBALL COMPRESSION WEAR -->
 <article class="group bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-t-xl">
 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Sleek short sleeve volleyball performance top in vibrant gradient neon orange with black technical flatlock seams in studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUXjvwZJBLQRRYtPyMzUqf7dXNy8hJgOvDOgnlebmSakUmZxdaYmJTakf9czOFb2s4tm9lYVWkkOjuaQK4q8FZE24aL1bdN1iBLTEsB8rv9P7e4-9bHO87k1iSTgjxRDgLFCmhxvIerfUedcznxC7gKgl92nNZcBlECA-8eS3g-Fx5zTSWpvKYRqjsSausmCtmvnPxK1DmErIgqDTmsXzIBm_jhJP6WDS0mRVanCMoDNW8wKzI1mhXqg">
 <button aria-label="Add to Wishlist" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 hover:bg-surface-bright text-on-surface hover:text-tertiary flex items-center justify-center transition-all shadow-sm">
 <span class="material-symbols-outlined text-[18px]">favorite</span>
@@ -624,7 +624,7 @@ include __DIR__ . '/php/header.php';
 </article>
 <!-- PRODUCT 8: HIGH-TRACTION FOOTBALL CLEATS -->
 <article class="group bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-t-xl">
 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High performance football firm ground soccer boots in matte black with volt yellow chevron molded studs and chrome heel counter on dark textured surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ_ObAgW7nx8TNCBZ5uRWpRm17DUxoOl21PYJibcIFZAAJaMq9B9191QefdAWCc9dyg4N4nM6jS5_yu1TJL2yXpFNU2w9QHytxASCWuSt3Q8_Hwjx2eQuQ8Y-E3-71olZd3sOlesmZzv1iKTPXdnGLb94FQ6kujk1kcKffafyGsQ9a8tOC-oQZM-RPeFy9XBH6dozQnPeCldX0nZJmMXexYFSAN103wo_cXYzW4YvsnCJ6b4yjytTQxw">
 <div class="absolute top-2 left-2 flex flex-col gap-1">
 <span class="bg-surface-container-highest text-secondary font-label-xs text-label-xs px-2 py-0.5 rounded font-bold uppercase tracking-wider shadow-sm">FIRM GROUND FG</span>
@@ -664,7 +664,7 @@ include __DIR__ . '/php/header.php';
 </article>
 <!-- PRODUCT 9: TRAINING PERFORMANCE TEE -->
 <article class="group bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-t-xl">
 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Athletic training compression dry-fit shirt in carbon gray with laser perforated ventilations across shoulders and back on sports mannequin." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxFIOkR7y_22Nzs8IA34lfJJl6svsYIkWuz45m1Rh-_AFOud-xK0GgiENv4T5R9rwwreEk-YOmvHiTq-eEjzvJeJFh6TWgHr7vKZBaOFHQq9XTM6BzPQaDgYLH-78kEOlc6q8HxwDJKkTbpWWyN5ewq_gIgfu5XM_ozqNRLXgqdHH6BcmFVwYLDGlGd4F3y1SFSxKukaO8xrM4JVMhT8dHgOmnPmR6PuRojEi1HkSbHfUE6CJv-2IV6w">
 <button aria-label="Add to Wishlist" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 hover:bg-surface-bright text-on-surface hover:text-tertiary flex items-center justify-center transition-all shadow-sm">
 <span class="material-symbols-outlined text-[18px]">favorite</span>
@@ -701,7 +701,7 @@ include __DIR__ . '/php/header.php';
 </article>
 <!-- PRODUCT 10: SUBLIMATED WARM-UP BIBS (PACK OF 12) -->
 <article class="group bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-t-xl">
 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Stack of vibrant neon training pinnies bibs in volt yellow and electric coral red with printed team squad numbers in industrial athletic locker." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQiQoruMPnhrhnkflBkLw4dmJgiXTLzYUtDYfnppBcDU6bTHwoW8Nytpv7s_37qtdHp5pvjLKhlUdC7J3ilgpqVZnxmF6rzNbU7S1Ogh7QaCxwfY66tXWoxjsGvtPZOHTvPZqiIsV7Yh2byRr9U1WseqnDmr6t7Fhjot5rfD4FyYWN92fblg-xIeSz62XiBsl2_tAEtQs00Yk5Yn-8_aChtyyPu6FgzDwCwYMi2h2INocMC729QHx4CQ">
 <div class="absolute top-2 left-2 flex flex-col gap-1">
 <span class="bg-surface-container-lowest/90 text-secondary-fixed font-label-xs text-label-xs px-2 py-0.5 rounded font-bold uppercase tracking-wider">TEAM PACK (12 PCS)</span>
@@ -741,7 +741,7 @@ include __DIR__ . '/php/header.php';
 </article>
 <!-- PRODUCT 11: FOOTBALL AWAY SUB-KIT -->
 <article class="group bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-t-xl">
 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern football away jersey in arctic white with slate grey digital pixel camouflage patterns and sleek minimal branding against dark stadium lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2_2AKRGfYFt5Bz9QPJ0h8i-Rrbs73WDgtZ9V0CF_-YT1i1Pi74ayVDrYhiO228FtTJ_WG-SIeAVv2rNJBYa3yE-rV8lDJLMf2SGUCOCyRglo_VargYPYyUTslXrOTHT95zagTWuDd_UNm-bZIYbHKmSTluuvPSCQe7LsGoMUL6pSiGL7T3rLi3x8EE1PPgbsJo_e8RE578rBwDJMIja8H7wrWaihGHMzKKaz2omUiyZ2EcQlNpTXZpg">
 <button aria-label="Add to Wishlist" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 hover:bg-surface-bright text-on-surface hover:text-tertiary flex items-center justify-center transition-all shadow-sm">
 <span class="material-symbols-outlined text-[18px]">favorite</span>
@@ -778,7 +778,7 @@ include __DIR__ . '/php/header.php';
 </article>
 <!-- PRODUCT 12: ATHLETIC HEAVY GYM HOODIE -->
 <article class="group bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-t-xl">
 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Heavyweight athletic gym pullover hoodie in charcoal heather with structured kangaroo pocket and reflective sleeve logo in athletic workshop setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2ZOatdGQENLofUxaXbqhiYAVDo7rcUP75TGhEvIR1Mzzlt9-MpLXqHxQ-SOXxxhdAPgSOWyr7JEny9QLPlGfl-bS3VFqzjLlVJQXFcSwfFO57IkE1ooN7fwM5LyUcxEL1UIvY4HwCCn-wCCVmygopgLS0bQFB0rCMbZ5ITzFhoJ9yitZ0HCTQo7nRXYo4gqM9S7H8zgwDBnWndOWUTBzN_dR3a8xHHf_I3kKdtdD6OEzM8p71I1bTbQ">
 <div class="absolute top-2 left-2 flex flex-col gap-1">
 <span class="bg-surface-container-lowest/90 text-on-surface font-label-xs text-label-xs px-2 py-0.5 rounded font-bold uppercase tracking-wider">340 GSM FLEECE</span>
