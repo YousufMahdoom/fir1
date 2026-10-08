@@ -6,7 +6,6 @@ include __DIR__ . '/php/header.php';
 ?>
 
 <main class="w-full bg-surface relative flex-1 overflow-x-hidden">
-<main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
 <!-- Toast Feedback Notification -->
 <div class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm bg-surface-container-highest px-space-md py-space-sm rounded-lg shadow-xl border-l-4 border-secondary-container" id="cartToast">
 <span class="material-symbols-outlined text-secondary-fixed text-[24px]">check_circle</span>
@@ -255,231 +254,258 @@ include __DIR__ . '/php/header.php';
 </section>
 <!-- FEATURED PRODUCTS WITH LIVE TABS & QUICK INTERACTIONS -->
 <section class="w-full py-space-xl bg-surface-container-lowest" id="featured-products">
-<div class="max-w-[1440px] mx-auto px-gutter-mobile lg:px-gutter">
-<!-- Section Top -->
-<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
-<div>
-<span class="font-label-lg text-label-lg uppercase tracking-widest text-secondary-fixed font-bold">FACTORY DIRECT WAREHOUSE</span>
-<h2 class="font-headline-lg text-headline-lg uppercase text-secondary tracking-tight">FEATURED SPORTS PERFORMANCE GEAR</h2>
-</div>
-<!-- Filter Tab Buttons -->
-<div class="inline-flex p-1 bg-surface-container-high rounded-lg gap-1">
-<button class="tab-btn active px-space-md py-2 rounded font-label-md text-label-md uppercase tracking-wider bg-primary-container text-on-primary-container font-bold transition-all" id="tab-best" onclick="switchTab('best')">Best Sellers</button>
-<button class="tab-btn px-space-md py-2 rounded font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface font-semibold transition-all" id="tab-new" onclick="switchTab('new')">New Drops</button>
-<button class="tab-btn px-space-md py-2 rounded font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface font-semibold transition-all" id="tab-custom" onclick="switchTab('custom')">Custom Ready</button>
-</div>
-</div>
-<!-- Products Grid (8 Core Items) -->
-<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
-<!-- Card 1 -->
-<div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-lg transition-all hover:bg-surface-container-high">
-<div class="relative w-full aspect-[4/5] sm:h-60 bg-surface-container-lowest overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="FHR Apex Pro sublimated football jersey in athletic volt and deep onyx black with moisture-wicking honeycomb arm panels displayed flat on studio surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5vW34Ocd61kiaYEvkmHAOakHYWH6y-9ntuGw8UrveSJBnQtY3t-uZO6MjC15l1Fh9jQeDLz6tVzqS-nFWajKDvubMkIMKxb06DB0cMmL5r9NQpBqPsZr2Wb02Z2cKWVCGYFjQIa4ixw2qtysDMfQwgtWV4jP6KimBZABRtDZuRVBRtTNu5RzTwYnFtXI3PsNkniwlvMeHO3r4AbnuIZzl-rzMmWydeCWpAcRiFQMtbIHTKBuGU-WKdw">
-<span class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-container font-label-xs text-label-xs uppercase px-2 py-0.5 rounded font-bold">SALE -14%</span>
-<button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors" onclick="toggleWishlist(this)">
-<span class="material-symbols-outlined text-[18px]">favorite</span>
-</button>
-</div>
-<div class="p-3 sm:p-4 flex flex-col flex-1 justify-between">
-<div>
-<div class="flex items-center justify-between text-outline text-label-xs font-label-xs mb-1">
-<span class="">FOOTBALL KITS</span>
-<span class="text-secondary-fixed flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">star</span> 4.9 (128)</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm uppercase text-secondary font-bold group-hover:text-primary transition-colors">FHR Apex Pro Sublimated Football Kit</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-1">Includes matching sublimated match shorts with drawstring lock.</p>
-</div>
-<!-- Size Selectors & Pricing -->
-<div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1">
-<div class="flex items-baseline gap-1.5">
-<span class="font-headline-sm text-headline-sm text-secondary-fixed font-bold">LKR 3,850</span>
-<span class="font-body-sm text-body-sm text-outline line-through">LKR 4,500</span>
-</div>
-<button data-add-to-cart="true" data-product-title='FHR Apex Pro Football Kit', 'LKR 3,850' class="w-full mt-2.5 py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer"><span>Add</span><span class="material-symbols-outlined text-[16px]">add</span></button>
-</div>
-</div>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-lg transition-all hover:bg-surface-container-high">
-<div class="relative w-full aspect-[4/5] sm:h-60 bg-surface-container-lowest overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Sri Lanka Pride custom cricket jersey in rich royal blue and yellow lion emblem motif with breathable micro-honeycomb mesh fabric texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY_BEbq8P-oe7F3LeAxFR8srLQIRRwxwiEb2z4_XJxRJcjVXkjEJmbCtd8w-hvZi2nU7Hd9DWsPN60YV7CWB40qMyn7fW8Nn_3WAyMvJJe7IQzWQ7KPuj6vY6NRvQbUUXPHR_S6bhmUdrOHcAhv4OcUStdDkpvkLTNgxks7iS5dA0xu87TzikefxBdsu_Y7hPzUSjpNUAl46PylTOuNo8Ncm51H2ri3OZLA16PkS_lQ_L82WX-FvqLcA">
-<span class="absolute top-3 left-3 bg-secondary-container text-on-secondary font-label-xs text-label-xs uppercase px-2 py-0.5 rounded font-bold">TOP RATED</span>
-<button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors" onclick="toggleWishlist(this)">
-<span class="material-symbols-outlined text-[18px]">favorite</span>
-</button>
-</div>
-<div class="p-3 sm:p-4 flex flex-col flex-1 justify-between">
-<div>
-<div class="flex items-center justify-between text-outline text-label-xs font-label-xs mb-1">
-<span class="">CRICKET MATCHWEAR</span>
-<span class="text-secondary-fixed flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">star</span> 5.0 (94)</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm uppercase text-secondary font-bold group-hover:text-primary transition-colors">Sri Lanka Pride Custom Cricket Jersey</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-1">Breathable honeycomb mesh with moisture regulation collar.</p>
-</div>
-<div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1">
-<span class="font-headline-sm text-headline-sm text-secondary font-bold">LKR 3,450</span>
-<button data-add-to-cart="true" data-product-title='Sri Lanka Pride Cricket Jersey', 'LKR 3,450' class="w-full mt-2.5 py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer"><span>Add</span><span class="material-symbols-outlined text-[16px]">add</span></button>
-</div>
-</div>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-lg transition-all hover:bg-surface-container-high">
-<div class="relative w-full aspect-[4/5] sm:h-60 bg-surface-container-lowest overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Thunder Strike basketball jersey set sleeveless tank and match shorts in deep matte black with striking ultraviolet geometric lightning angles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn5pHPWMCcoW6Mcs78_P2DHWxwuX4wHE5rc_PqzznEhyWKWos6WjljPdE1eW2GkJml3T_2DWG2jugP1lID7e_CWo_-q_Nypvy3GkJwUAK1tuKqrAgxO72mE7Wu4kxeCRYQBc01eJ1K0MM8ucGZhhhCXB9wzz-ZKd4WbRVYkF4iOw0qeOElT_toEPocRauCTNFRXJ_FpIjs5HSkPuQLbZ3-XBUnXlKZ3-MCezwOPdz40PbxFoXnUWKGYA">
-<span class="absolute top-3 left-3 bg-surface-container-highest text-primary font-label-xs text-label-xs uppercase px-2 py-0.5 rounded font-bold">KIT SET</span>
-<button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors" onclick="toggleWishlist(this)">
-<span class="material-symbols-outlined text-[18px]">favorite</span>
-</button>
-</div>
-<div class="p-3 sm:p-4 flex flex-col flex-1 justify-between">
-<div>
-<div class="flex items-center justify-between text-outline text-label-xs font-label-xs mb-1">
-<span class="">BASKETBALL SUBLIMATION</span>
-<span class="text-secondary-fixed flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">star</span> 4.8 (62)</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm uppercase text-secondary font-bold group-hover:text-primary transition-colors">Thunder Strike Basketball Uniform Set</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-1">Reversible dual-layer tank with reinforced hem piping.</p>
-</div>
-<div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1">
-<span class="font-headline-sm text-headline-sm text-secondary font-bold">LKR 4,200</span>
-<button data-add-to-cart="true" data-product-title='Thunder Strike Basketball Set', 'LKR 4,200' class="w-full mt-2.5 py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer"><span>Add</span><span class="material-symbols-outlined text-[16px]">add</span></button>
-</div>
-</div>
-</div>
-</div>
-<!-- Card 4 -->
-<div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-lg transition-all hover:bg-surface-container-high">
-<div class="relative w-full aspect-[4/5] sm:h-60 bg-surface-container-lowest overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Titan sublimated heavy duty rugby jersey in bold maroon and slate gray bands with thick reinforced crew collar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNG2IMf40nm5vAdy3EtY8xT06P24JwKoFrmsF7maFVaFX-mvcgzWWxkUTXNVt44EwsrJ2yzVEUvUNRDhX5eGjaY4WKq9g_6if14T8C4Qj3Vy3mCbpPm5CFAIRFYzM7ClOVusuBibmxpmy3RX0nir9RMRDtSeIo5QxVzS5flhLzbRnE9lb692kPmJE__OxkU-dyCohkNb4EAIJbuhH5b1aWRzg7EUa86spHKs-IdTN5626M_MfM88PFYw">
-<span class="absolute top-3 left-3 bg-surface-container-highest text-secondary-fixed font-label-xs text-label-xs uppercase px-2 py-0.5 rounded font-bold">280 GSM</span>
-<button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors" onclick="toggleWishlist(this)">
-<span class="material-symbols-outlined text-[18px]">favorite</span>
-</button>
-</div>
-<div class="p-3 sm:p-4 flex flex-col flex-1 justify-between">
-<div>
-<div class="flex items-center justify-between text-outline text-label-xs font-label-xs mb-1">
-<span class="">RUGBY UNION</span>
-<span class="text-secondary-fixed flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">star</span> 4.9 (45)</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm uppercase text-secondary font-bold group-hover:text-primary transition-colors">Titan Sublimated Rugby Match Jersey</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-1">High tensile tear-resistant yarn engineered for scrum stress.</p>
-</div>
-<div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1">
-<span class="font-headline-sm text-headline-sm text-secondary font-bold">LKR 4,800</span>
-<button data-add-to-cart="true" data-product-title='Titan Rugby Jersey', 'LKR 4,800' class="w-full mt-2.5 py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer"><span>Add</span><span class="material-symbols-outlined text-[16px]">add</span></button>
-</div>
-</div>
-</div>
-</div>
-<!-- Card 5 -->
-<div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-lg transition-all hover:bg-surface-container-high">
-<div class="relative w-full aspect-[4/5] sm:h-60 bg-surface-container-lowest overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Velocity Dry-Fit compression training shirt in heather charcoal with lime green flatlock ergonomics and ventilated back spine panel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0ghhqaj_ft4yAbmwj119C8n-Xcz-paL1_H5oEqHH0BwAxrHa6Fo1i1NA6r4igyh3ii6t0A8f_Y4AnIsupUFZ__pvRobrgOrA20b8xQL1MOWEdn2lm-V5YYIfmcSB7NqKZHR5xwChE0pFHmj_cA5kg-nqiFFqfItEGGsrGbKym_Qe5zwL8X1JZtooH2RsBtC6o5X_Cp6403qft5ftMryPu65o_7JwvVIFjHMHXh2dW8u6Z89dD-7dq8g">
-<span class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-container font-label-xs text-label-xs uppercase px-2 py-0.5 rounded font-bold">PROMO</span>
-<button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors" onclick="toggleWishlist(this)">
-<span class="material-symbols-outlined text-[18px]">favorite</span>
-</button>
-</div>
-<div class="p-3 sm:p-4 flex flex-col flex-1 justify-between">
-<div>
-<div class="flex items-center justify-between text-outline text-label-xs font-label-xs mb-1">
-<span class="">GYM &amp; TRAINING</span>
-<span class="text-secondary-fixed flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">star</span> 4.7 (89)</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm uppercase text-secondary font-bold group-hover:text-primary transition-colors">Velocity Dry-Fit Compression Training Tee</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-1">Antibacterial silver ions for zero odor after intense sessions.</p>
-</div>
-<div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1">
-<div class="flex items-baseline gap-1.5">
-<span class="font-headline-sm text-headline-sm text-secondary-fixed font-bold">LKR 2,250</span>
-<span class="font-body-sm text-body-sm text-outline line-through">LKR 2,800</span>
-</div>
-<button data-add-to-cart="true" data-product-title='Velocity Compression Tee', 'LKR 2,250' class="w-full mt-2.5 py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer"><span>Add</span><span class="material-symbols-outlined text-[16px]">add</span></button>
-</div>
-</div>
-</div>
-</div>
-<!-- Card 6 -->
-<div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-lg transition-all hover:bg-surface-container-high">
-<div class="relative w-full aspect-[4/5] sm:h-60 bg-surface-container-lowest overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Podium presentation team tracksuit jacket in black and deep metallic blue with fully sublimated geometric side panels and high-build collar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3JTLB_X3wAIFOe_abxgMKDdyMfPhmXGJziGVKepWAb4Pfvk1iA0-oVRMSRoJnRkUAnxxLh7ygL6bIqL6TotPKLn38YRSlV6JXHRSKM7ZUTeNK46MbQ1rYA43vCQzczJO8FbrGnJWynKKiUlFCBO-bqnctHxJDI-cYICVn4ZO0jqyi5wmIDyoC5GyEoAiLVAaHDC1VpbMBPVpfcOxMqs5sZpWr73v8WSjsBhYhVOq0ozkvrc8d7AdMHw">
-<span class="absolute top-3 left-3 bg-secondary-container text-on-secondary font-label-xs text-label-xs uppercase px-2 py-0.5 rounded font-bold">LUXURY TEAMWEAR</span>
-<button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors" onclick="toggleWishlist(this)">
-<span class="material-symbols-outlined text-[18px]">favorite</span>
-</button>
-</div>
-<div class="p-3 sm:p-4 flex flex-col flex-1 justify-between">
-<div>
-<div class="flex items-center justify-between text-outline text-label-xs font-label-xs mb-1">
-<span class="">PRESENTATION WEAR</span>
-<span class="text-secondary-fixed flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">star</span> 5.0 (31)</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm uppercase text-secondary font-bold group-hover:text-primary transition-colors">Podium Presentation Team Tracksuit</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-1">Water-repellent micro-poly outer with breathable mesh interior.</p>
-</div>
-<div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1">
-<span class="font-headline-sm text-headline-sm text-secondary font-bold">LKR 7,950</span>
-<button data-add-to-cart="true" data-product-title='Podium Team Tracksuit', 'LKR 7,950' class="w-full mt-2.5 py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer"><span>Add</span><span class="material-symbols-outlined text-[16px]">add</span></button>
-</div>
-</div>
-</div>
-</div>
-<!-- Card 7 -->
-<div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-lg transition-all hover:bg-surface-container-high">
-<div class="relative w-full aspect-[4/5] sm:h-60 bg-surface-container-lowest overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="FHR Strike Pro Elite firm ground football boots in electric neon volt and iridescent chrome soleplate with precision ball control texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_22u7O81xAgUk5U-LEObja06wCPGM8xQcGKwC-5rPUuO62OUDqm4E29SIFZjz3qM1nH4g8mbCPXMNmbEV8X50zw8VoWlWpg1-p_ksbhvWxeBlIh9EEezwEgDUJla_b4kItPbactz6kSyQBevR853fH0aPF1iBAk2boCyBZ3ceBccXL2HUsu7HaI7J2QkJQ_Ec0DwjoRS-zCZF3Q97iFab_gqeDaCVOo9Zi9ho3rRWB_bo3cz_ZCQ-Aw">
-<span class="absolute top-3 left-3 bg-surface-container-highest text-secondary-fixed font-label-xs text-label-xs uppercase px-2 py-0.5 rounded font-bold">FG PRO STUD</span>
-<button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors" onclick="toggleWishlist(this)">
-<span class="material-symbols-outlined text-[18px]">favorite</span>
-</button>
-</div>
-<div class="p-3 sm:p-4 flex flex-col flex-1 justify-between">
-<div>
-<div class="flex items-center justify-between text-outline text-label-xs font-label-xs mb-1">
-<span class="">FOOTWEAR</span>
-<span class="text-secondary-fixed flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">star</span> 4.9 (53)</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm uppercase text-secondary font-bold group-hover:text-primary transition-colors">FHR Strike Pro Elite Football Boots</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-1">Lightweight sprint frame TPU soleplate for aggressive acceleration.</p>
-</div>
-<div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1">
-<span class="font-headline-sm text-headline-sm text-secondary font-bold">LKR 12,500</span>
-<button data-add-to-cart="true" data-product-title='FHR Strike Pro Boots', 'LKR 12,500' class="w-full mt-2.5 py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer"><span>Add</span><span class="material-symbols-outlined text-[16px]">add</span></button>
-</div>
-</div>
-</div>
-</div>
-<!-- Card 8 -->
-<div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-lg transition-all hover:bg-surface-container-high">
-<div class="relative w-full aspect-[4/5] sm:h-60 bg-surface-container-lowest overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="All-weather sports gear duffle bag 45L in ballistic nylon with ventilated wet shoe compartment and padded team backpack straps" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVY2FkbOQFzXOSMVZa82eBAUPUev1wnFvgiadq_b9vQDCdflrIVeg59ujWnD_s7LB3Ttqx5t5szJuhmcM1WXCe0Xts9_8MTKPwiz433BAjpE-iKrlZn-wo5yyAN8n31X0PAmL24a-1CU-t72rzLElHb2U4b0CpcThe2IZgNYmcEnAdj4N7i6H1wQwYRcVREE4n6TzoeTCOfMxzrF65eVJ_lQx2A7_rAQdqQMtkQ23Gm9vpuEGJ7JLnYw">
-<span class="absolute top-3 left-3 bg-surface-container-highest text-primary font-label-xs text-label-xs uppercase px-2 py-0.5 rounded font-bold">WATERPROOF</span>
-<button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors" onclick="toggleWishlist(this)">
-<span class="material-symbols-outlined text-[18px]">favorite</span>
-</button>
-</div>
-<div class="p-3 sm:p-4 flex flex-col flex-1 justify-between">
-<div>
-<div class="flex items-center justify-between text-outline text-label-xs font-label-xs mb-1">
-<span class="">TEAM ACCESSORIES</span>
-<span class="text-secondary-fixed flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">star</span> 4.8 (77)</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm uppercase text-secondary font-bold group-hover:text-primary transition-colors">All-Weather Sports Duffle &amp; Gear Bag 45L</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-1">Dedicated ventilated boot cave &amp; reinforced water-stop bottom base.</p>
-</div>
-<div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1">
-<span class="font-headline-sm text-headline-sm text-secondary font-bold">LKR 5,200</span>
-<button data-add-to-cart="true" data-product-title='All-Weather Duffle Bag', 'LKR 5,200' class="w-full mt-2.5 py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer"><span>Add</span><span class="material-symbols-outlined text-[16px]">add</span></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-[1440px] mx-auto px-gutter-mobile lg:px-gutter">
+    <!-- Section Top -->
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+      <div>
+        <span class="font-label-lg text-label-lg uppercase tracking-widest text-secondary-fixed font-bold">FACTORY DIRECT WAREHOUSE</span>
+        <h2 class="font-headline-lg text-headline-lg uppercase text-secondary tracking-tight mt-1">FEATURED SPORTS PERFORMANCE GEAR</h2>
+      </div>
+      <!-- Filter Tab Buttons -->
+      <div class="inline-flex p-1 bg-surface-container-high rounded-lg gap-1 shrink-0">
+        <button class="tab-btn active px-3 sm:px-4 py-1.5 sm:py-2 rounded font-label-md text-xs sm:text-sm uppercase tracking-wider bg-primary-container text-on-primary-container font-bold transition-all cursor-pointer" id="tab-best" onclick="switchTab('best')">Best Sellers</button>
+        <button class="tab-btn px-3 sm:px-4 py-1.5 sm:py-2 rounded font-label-md text-xs sm:text-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface font-semibold transition-all cursor-pointer" id="tab-new" onclick="switchTab('new')">New Drops</button>
+        <button class="tab-btn px-3 sm:px-4 py-1.5 sm:py-2 rounded font-label-md text-xs sm:text-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface font-semibold transition-all cursor-pointer" id="tab-custom" onclick="switchTab('custom')">Custom Ready</button>
+      </div>
+    </div>
+    <!-- Products Grid (8 Core Items) - 2 columns on mobile, 3 on tablet, 4 on desktop -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
+      <!-- Card 1 -->
+      <div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-md hover:shadow-xl transition-all duration-300 hover:bg-surface-container-high h-full border border-outline-variant/20 hover:border-primary/40">
+        <div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="FHR Apex Pro sublimated football jersey in athletic volt and deep onyx black with moisture-wicking honeycomb arm panels displayed flat on studio surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5vW34Ocd61kiaYEvkmHAOakHYWH6y-9ntuGw8UrveSJBnQtY3t-uZO6MjC15l1Fh9jQeDLz6tVzqS-nFWajKDvubMkIMKxb06DB0cMmL5r9NQpBqPsZr2Wb02Z2cKWVCGYFjQIa4ixw2qtysDMfQwgtWV4jP6KimBZABRtDZuRVBRtTNu5RzTwYnFtXI3PsNkniwlvMeHO3r4AbnuIZzl-rzMmWydeCWpAcRiFQMtbIHTKBuGU-WKdw">
+          <span class="absolute top-2.5 left-2.5 bg-tertiary-container text-on-tertiary-container text-[10px] sm:text-xs uppercase px-2 py-0.5 rounded font-bold shadow-sm">SALE -14%</span>
+          <button aria-label="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors shadow-sm cursor-pointer" onclick="toggleWishlist(this)">
+            <span class="material-symbols-outlined text-[16px] sm:text-[18px]">favorite</span>
+          </button>
+        </div>
+        <div class="p-2.5 sm:p-4 flex flex-col flex-1 justify-between">
+          <div>
+            <div class="flex items-center justify-between text-outline text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-1">
+              <span class="truncate mr-1">FOOTBALL KITS</span>
+              <span class="text-secondary-fixed flex items-center gap-0.5 font-bold shrink-0"><span class="material-symbols-outlined text-[12px] sm:text-[14px]">star</span> 4.9 (128)</span>
+            </div>
+            <h3 class="font-headline-sm text-xs sm:text-sm md:text-base font-bold uppercase text-secondary group-hover:text-primary transition-colors line-clamp-2 min-h-[2rem] sm:min-h-[2.5rem] leading-snug">FHR Apex Pro Sublimated Football Kit</h3>
+            <p class="font-body-sm text-[11px] sm:text-xs text-on-surface-variant line-clamp-1 mt-0.5">Includes matching sublimated match shorts with drawstring lock.</p>
+          </div>
+          <!-- Price & Add to Cart -->
+          <div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1.5">
+            <div class="flex items-baseline gap-1 sm:gap-1.5 flex-wrap">
+              <span class="font-headline-sm text-xs sm:text-sm text-secondary-fixed font-bold">LKR 3,850</span>
+              <span class="text-[10px] sm:text-xs text-outline line-through">LKR 4,500</span>
+            </div>
+            <button data-add-to-cart="true" data-product-title="FHR Apex Pro Sublimated Football Kit" data-product-price="LKR 3,850" class="w-full py-1.5 sm:py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-[11px] sm:text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer">
+              <span>Add</span><span class="material-symbols-outlined text-[14px] sm:text-[16px]">add</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-md hover:shadow-xl transition-all duration-300 hover:bg-surface-container-high h-full border border-outline-variant/20 hover:border-primary/40">
+        <div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sri Lanka Pride custom cricket jersey in rich royal blue and yellow lion emblem motif with breathable micro-honeycomb mesh fabric texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY_BEbq8P-oe7F3LeAxFR8srLQIRRwxwiEb2z4_XJxRJcjVXkjEJmbCtd8w-hvZi2nU7Hd9DWsPN60YV7CWB40qMyn7fW8Nn_3WAyMvJJe7IQzWQ7KPuj6vY6NRvQbUUXPHR_S6bhmUdrOHcAhv4OcUStdDkpvkLTNgxks7iS5dA0xu87TzikefxBdsu_Y7hPzUSjpNUAl46PylTOuNo8Ncm51H2ri3OZLA16PkS_lQ_L82WX-FvqLcA">
+          <span class="absolute top-2.5 left-2.5 bg-secondary-container text-on-secondary text-[10px] sm:text-xs uppercase px-2 py-0.5 rounded font-bold shadow-sm">TOP RATED</span>
+          <button aria-label="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors shadow-sm cursor-pointer" onclick="toggleWishlist(this)">
+            <span class="material-symbols-outlined text-[16px] sm:text-[18px]">favorite</span>
+          </button>
+        </div>
+        <div class="p-2.5 sm:p-4 flex flex-col flex-1 justify-between">
+          <div>
+            <div class="flex items-center justify-between text-outline text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-1">
+              <span class="truncate mr-1">CRICKET MATCHWEAR</span>
+              <span class="text-secondary-fixed flex items-center gap-0.5 font-bold shrink-0"><span class="material-symbols-outlined text-[12px] sm:text-[14px]">star</span> 5.0 (94)</span>
+            </div>
+            <h3 class="font-headline-sm text-xs sm:text-sm md:text-base font-bold uppercase text-secondary group-hover:text-primary transition-colors line-clamp-2 min-h-[2rem] sm:min-h-[2.5rem] leading-snug">Sri Lanka Pride Custom Cricket Jersey</h3>
+            <p class="font-body-sm text-[11px] sm:text-xs text-on-surface-variant line-clamp-1 mt-0.5">Breathable honeycomb mesh with moisture regulation collar.</p>
+          </div>
+          <!-- Price & Add to Cart -->
+          <div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1.5">
+            <div class="flex items-baseline gap-1 sm:gap-1.5 flex-wrap">
+              <span class="font-headline-sm text-xs sm:text-sm text-secondary-fixed font-bold">LKR 3,450</span>
+            </div>
+            <button data-add-to-cart="true" data-product-title="Sri Lanka Pride Custom Cricket Jersey" data-product-price="LKR 3,450" class="w-full py-1.5 sm:py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-[11px] sm:text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer">
+              <span>Add</span><span class="material-symbols-outlined text-[14px] sm:text-[16px]">add</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-md hover:shadow-xl transition-all duration-300 hover:bg-surface-container-high h-full border border-outline-variant/20 hover:border-primary/40">
+        <div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Thunder Strike basketball jersey set sleeveless tank and match shorts in deep matte black with striking ultraviolet geometric lightning angles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn5pHPWMCcoW6Mcs78_P2DHWxwuX4wHE5rc_PqzznEhyWKWos6WjljPdE1eW2GkJml3T_2DWG2jugP1lID7e_CWo_-q_Nypvy3GkJwUAK1tuKqrAgxO72mE7Wu4kxeCRYQBc01eJ1K0MM8ucGZhhhCXB9wzz-ZKd4WbRVYkF4iOw0qeOElT_toEPocRauCTNFRXJ_FpIjs5HSkPuQLbZ3-XBUnXlKZ3-MCezwOPdz40PbxFoXnUWKGYA">
+          <span class="absolute top-2.5 left-2.5 bg-surface-container-highest text-primary text-[10px] sm:text-xs uppercase px-2 py-0.5 rounded font-bold shadow-sm">KIT SET</span>
+          <button aria-label="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors shadow-sm cursor-pointer" onclick="toggleWishlist(this)">
+            <span class="material-symbols-outlined text-[16px] sm:text-[18px]">favorite</span>
+          </button>
+        </div>
+        <div class="p-2.5 sm:p-4 flex flex-col flex-1 justify-between">
+          <div>
+            <div class="flex items-center justify-between text-outline text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-1">
+              <span class="truncate mr-1">BASKETBALL SUBLIMATION</span>
+              <span class="text-secondary-fixed flex items-center gap-0.5 font-bold shrink-0"><span class="material-symbols-outlined text-[12px] sm:text-[14px]">star</span> 4.8 (62)</span>
+            </div>
+            <h3 class="font-headline-sm text-xs sm:text-sm md:text-base font-bold uppercase text-secondary group-hover:text-primary transition-colors line-clamp-2 min-h-[2rem] sm:min-h-[2.5rem] leading-snug">Thunder Strike Basketball Uniform Set</h3>
+            <p class="font-body-sm text-[11px] sm:text-xs text-on-surface-variant line-clamp-1 mt-0.5">Reversible dual-layer tank with reinforced hem piping.</p>
+          </div>
+          <!-- Price & Add to Cart -->
+          <div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1.5">
+            <div class="flex items-baseline gap-1 sm:gap-1.5 flex-wrap">
+              <span class="font-headline-sm text-xs sm:text-sm text-secondary-fixed font-bold">LKR 4,200</span>
+            </div>
+            <button data-add-to-cart="true" data-product-title="Thunder Strike Basketball Uniform Set" data-product-price="LKR 4,200" class="w-full py-1.5 sm:py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-[11px] sm:text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer">
+              <span>Add</span><span class="material-symbols-outlined text-[14px] sm:text-[16px]">add</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-md hover:shadow-xl transition-all duration-300 hover:bg-surface-container-high h-full border border-outline-variant/20 hover:border-primary/40">
+        <div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Titan sublimated heavy duty rugby jersey in bold maroon and slate gray bands with thick reinforced crew collar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNG2IMf40nm5vAdy3EtY8xT06P24JwKoFrmsF7maFVaFX-mvcgzWWxkUTXNVt44EwsrJ2yzVEUvUNRDhX5eGjaY4WKq9g_6if14T8C4Qj3Vy3mCbpPm5CFAIRFYzM7ClOVusuBibmxpmy3RX0nir9RMRDtSeIo5QxVzS5flhLzbRnE9lb692kPmJE__OxkU-dyCohkNb4EAIJbuhH5b1aWRzg7EUa86spHKs-IdTN5626M_MfM88PFYw">
+          <span class="absolute top-2.5 left-2.5 bg-surface-container-highest text-secondary-fixed text-[10px] sm:text-xs uppercase px-2 py-0.5 rounded font-bold shadow-sm">280 GSM</span>
+          <button aria-label="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors shadow-sm cursor-pointer" onclick="toggleWishlist(this)">
+            <span class="material-symbols-outlined text-[16px] sm:text-[18px]">favorite</span>
+          </button>
+        </div>
+        <div class="p-2.5 sm:p-4 flex flex-col flex-1 justify-between">
+          <div>
+            <div class="flex items-center justify-between text-outline text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-1">
+              <span class="truncate mr-1">RUGBY UNION</span>
+              <span class="text-secondary-fixed flex items-center gap-0.5 font-bold shrink-0"><span class="material-symbols-outlined text-[12px] sm:text-[14px]">star</span> 4.9 (45)</span>
+            </div>
+            <h3 class="font-headline-sm text-xs sm:text-sm md:text-base font-bold uppercase text-secondary group-hover:text-primary transition-colors line-clamp-2 min-h-[2rem] sm:min-h-[2.5rem] leading-snug">Titan Sublimated Rugby Match Jersey</h3>
+            <p class="font-body-sm text-[11px] sm:text-xs text-on-surface-variant line-clamp-1 mt-0.5">High tensile tear-resistant yarn engineered for scrum stress.</p>
+          </div>
+          <!-- Price & Add to Cart -->
+          <div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1.5">
+            <div class="flex items-baseline gap-1 sm:gap-1.5 flex-wrap">
+              <span class="font-headline-sm text-xs sm:text-sm text-secondary-fixed font-bold">LKR 4,800</span>
+            </div>
+            <button data-add-to-cart="true" data-product-title="Titan Sublimated Rugby Match Jersey" data-product-price="LKR 4,800" class="w-full py-1.5 sm:py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-[11px] sm:text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer">
+              <span>Add</span><span class="material-symbols-outlined text-[14px] sm:text-[16px]">add</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-md hover:shadow-xl transition-all duration-300 hover:bg-surface-container-high h-full border border-outline-variant/20 hover:border-primary/40">
+        <div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Velocity Dry-Fit compression training shirt in heather charcoal with lime green flatlock ergonomics and ventilated back spine panel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0ghhqaj_ft4yAbmwj119C8n-Xcz-paL1_H5oEqHH0BwAxrHa6Fo1i1NA6r4igyh3ii6t0A8f_Y4AnIsupUFZ__pvRobrgOrA20b8xQL1MOWEdn2lm-V5YYIfmcSB7NqKZHR5xwChE0pFHmj_cA5kg-nqiFFqfItEGGsrGbKym_Qe5zwL8X1JZtooH2RsBtC6o5X_Cp6403qft5ftMryPu65o_7JwvVIFjHMHXh2dW8u6Z89dD-7dq8g">
+          <span class="absolute top-2.5 left-2.5 bg-tertiary-container text-on-tertiary-container text-[10px] sm:text-xs uppercase px-2 py-0.5 rounded font-bold shadow-sm">PROMO</span>
+          <button aria-label="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors shadow-sm cursor-pointer" onclick="toggleWishlist(this)">
+            <span class="material-symbols-outlined text-[16px] sm:text-[18px]">favorite</span>
+          </button>
+        </div>
+        <div class="p-2.5 sm:p-4 flex flex-col flex-1 justify-between">
+          <div>
+            <div class="flex items-center justify-between text-outline text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-1">
+              <span class="truncate mr-1">GYM & TRAINING</span>
+              <span class="text-secondary-fixed flex items-center gap-0.5 font-bold shrink-0"><span class="material-symbols-outlined text-[12px] sm:text-[14px]">star</span> 4.7 (89)</span>
+            </div>
+            <h3 class="font-headline-sm text-xs sm:text-sm md:text-base font-bold uppercase text-secondary group-hover:text-primary transition-colors line-clamp-2 min-h-[2rem] sm:min-h-[2.5rem] leading-snug">Velocity Dry-Fit Compression Training Tee</h3>
+            <p class="font-body-sm text-[11px] sm:text-xs text-on-surface-variant line-clamp-1 mt-0.5">Antibacterial silver ions for zero odor after intense sessions.</p>
+          </div>
+          <!-- Price & Add to Cart -->
+          <div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1.5">
+            <div class="flex items-baseline gap-1 sm:gap-1.5 flex-wrap">
+              <span class="font-headline-sm text-xs sm:text-sm text-secondary-fixed font-bold">LKR 2,250</span>
+              <span class="text-[10px] sm:text-xs text-outline line-through">LKR 2,800</span>
+            </div>
+            <button data-add-to-cart="true" data-product-title="Velocity Dry-Fit Compression Training Tee" data-product-price="LKR 2,250" class="w-full py-1.5 sm:py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-[11px] sm:text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer">
+              <span>Add</span><span class="material-symbols-outlined text-[14px] sm:text-[16px]">add</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-md hover:shadow-xl transition-all duration-300 hover:bg-surface-container-high h-full border border-outline-variant/20 hover:border-primary/40">
+        <div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Podium presentation team tracksuit jacket in black and deep metallic blue with fully sublimated geometric side panels and high-build collar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3JTLB_X3wAIFOe_abxgMKDdyMfPhmXGJziGVKepWAb4Pfvk1iA0-oVRMSRoJnRkUAnxxLh7ygL6bIqL6TotPKLn38YRSlV6JXHRSKM7ZUTeNK46MbQ1rYA43vCQzczJO8FbrGnJWynKKiUlFCBO-bqnctHxJDI-cYICVn4ZO0jqyi5wmIDyoC5GyEoAiLVAaHDC1VpbMBPVpfcOxMqs5sZpWr73v8WSjsBhYhVOq0ozkvrc8d7AdMHw">
+          <span class="absolute top-2.5 left-2.5 bg-secondary-container text-on-secondary text-[10px] sm:text-xs uppercase px-2 py-0.5 rounded font-bold shadow-sm">LUXURY TEAMWEAR</span>
+          <button aria-label="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors shadow-sm cursor-pointer" onclick="toggleWishlist(this)">
+            <span class="material-symbols-outlined text-[16px] sm:text-[18px]">favorite</span>
+          </button>
+        </div>
+        <div class="p-2.5 sm:p-4 flex flex-col flex-1 justify-between">
+          <div>
+            <div class="flex items-center justify-between text-outline text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-1">
+              <span class="truncate mr-1">PRESENTATION WEAR</span>
+              <span class="text-secondary-fixed flex items-center gap-0.5 font-bold shrink-0"><span class="material-symbols-outlined text-[12px] sm:text-[14px]">star</span> 5.0 (31)</span>
+            </div>
+            <h3 class="font-headline-sm text-xs sm:text-sm md:text-base font-bold uppercase text-secondary group-hover:text-primary transition-colors line-clamp-2 min-h-[2rem] sm:min-h-[2.5rem] leading-snug">Podium Presentation Team Tracksuit</h3>
+            <p class="font-body-sm text-[11px] sm:text-xs text-on-surface-variant line-clamp-1 mt-0.5">Water-repellent micro-poly outer with breathable mesh interior.</p>
+          </div>
+          <!-- Price & Add to Cart -->
+          <div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1.5">
+            <div class="flex items-baseline gap-1 sm:gap-1.5 flex-wrap">
+              <span class="font-headline-sm text-xs sm:text-sm text-secondary-fixed font-bold">LKR 7,950</span>
+            </div>
+            <button data-add-to-cart="true" data-product-title="Podium Presentation Team Tracksuit" data-product-price="LKR 7,950" class="w-full py-1.5 sm:py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-[11px] sm:text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer">
+              <span>Add</span><span class="material-symbols-outlined text-[14px] sm:text-[16px]">add</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-md hover:shadow-xl transition-all duration-300 hover:bg-surface-container-high h-full border border-outline-variant/20 hover:border-primary/40">
+        <div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="FHR Strike Pro Elite firm ground football boots in electric neon volt and iridescent chrome soleplate with precision ball control texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_22u7O81xAgUk5U-LEObja06wCPGM8xQcGKwC-5rPUuO62OUDqm4E29SIFZjz3qM1nH4g8mbCPXMNmbEV8X50zw8VoWlWpg1-p_ksbhvWxeBlIh9EEezwEgDUJla_b4kItPbactz6kSyQBevR853fH0aPF1iBAk2boCyBZ3ceBccXL2HUsu7HaI7J2QkJQ_Ec0DwjoRS-zCZF3Q97iFab_gqeDaCVOo9Zi9ho3rRWB_bo3cz_ZCQ-Aw">
+          <span class="absolute top-2.5 left-2.5 bg-surface-container-highest text-secondary-fixed text-[10px] sm:text-xs uppercase px-2 py-0.5 rounded font-bold shadow-sm">FG PRO STUD</span>
+          <button aria-label="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors shadow-sm cursor-pointer" onclick="toggleWishlist(this)">
+            <span class="material-symbols-outlined text-[16px] sm:text-[18px]">favorite</span>
+          </button>
+        </div>
+        <div class="p-2.5 sm:p-4 flex flex-col flex-1 justify-between">
+          <div>
+            <div class="flex items-center justify-between text-outline text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-1">
+              <span class="truncate mr-1">FOOTWEAR</span>
+              <span class="text-secondary-fixed flex items-center gap-0.5 font-bold shrink-0"><span class="material-symbols-outlined text-[12px] sm:text-[14px]">star</span> 4.9 (53)</span>
+            </div>
+            <h3 class="font-headline-sm text-xs sm:text-sm md:text-base font-bold uppercase text-secondary group-hover:text-primary transition-colors line-clamp-2 min-h-[2rem] sm:min-h-[2.5rem] leading-snug">FHR Strike Pro Elite Football Boots</h3>
+            <p class="font-body-sm text-[11px] sm:text-xs text-on-surface-variant line-clamp-1 mt-0.5">Lightweight sprint frame TPU soleplate for aggressive acceleration.</p>
+          </div>
+          <!-- Price & Add to Cart -->
+          <div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1.5">
+            <div class="flex items-baseline gap-1 sm:gap-1.5 flex-wrap">
+              <span class="font-headline-sm text-xs sm:text-sm text-secondary-fixed font-bold">LKR 12,500</span>
+            </div>
+            <button data-add-to-cart="true" data-product-title="FHR Strike Pro Elite Football Boots" data-product-price="LKR 12,500" class="w-full py-1.5 sm:py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-[11px] sm:text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer">
+              <span>Add</span><span class="material-symbols-outlined text-[14px] sm:text-[16px]">add</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-md hover:shadow-xl transition-all duration-300 hover:bg-surface-container-high h-full border border-outline-variant/20 hover:border-primary/40">
+        <div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="All-weather sports gear duffle bag 45L in ballistic nylon with ventilated wet shoe compartment and padded team backpack straps" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVY2FkbOQFzXOSMVZa82eBAUPUev1wnFvgiadq_b9vQDCdflrIVeg59ujWnD_s7LB3Ttqx5t5szJuhmcM1WXCe0Xts9_8MTKPwiz433BAjpE-iKrlZn-wo5yyAN8n31X0PAmL24a-1CU-t72rzLElHb2U4b0CpcThe2IZgNYmcEnAdj4N7i6H1wQwYRcVREE4n6TzoeTCOfMxzrF65eVJ_lQx2A7_rAQdqQMtkQ23Gm9vpuEGJ7JLnYw">
+          <span class="absolute top-2.5 left-2.5 bg-surface-container-highest text-primary text-[10px] sm:text-xs uppercase px-2 py-0.5 rounded font-bold shadow-sm">WATERPROOF</span>
+          <button aria-label="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors shadow-sm cursor-pointer" onclick="toggleWishlist(this)">
+            <span class="material-symbols-outlined text-[16px] sm:text-[18px]">favorite</span>
+          </button>
+        </div>
+        <div class="p-2.5 sm:p-4 flex flex-col flex-1 justify-between">
+          <div>
+            <div class="flex items-center justify-between text-outline text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-1">
+              <span class="truncate mr-1">TEAM ACCESSORIES</span>
+              <span class="text-secondary-fixed flex items-center gap-0.5 font-bold shrink-0"><span class="material-symbols-outlined text-[12px] sm:text-[14px]">star</span> 4.8 (77)</span>
+            </div>
+            <h3 class="font-headline-sm text-xs sm:text-sm md:text-base font-bold uppercase text-secondary group-hover:text-primary transition-colors line-clamp-2 min-h-[2rem] sm:min-h-[2.5rem] leading-snug">All-Weather Sports Duffle & Gear Bag 45L</h3>
+            <p class="font-body-sm text-[11px] sm:text-xs text-on-surface-variant line-clamp-1 mt-0.5">Dedicated ventilated boot cave & reinforced water-stop bottom base.</p>
+          </div>
+          <!-- Price & Add to Cart -->
+          <div class="mt-2.5 pt-2 border-t border-outline-variant/20 flex flex-col gap-1.5">
+            <div class="flex items-baseline gap-1 sm:gap-1.5 flex-wrap">
+              <span class="font-headline-sm text-xs sm:text-sm text-secondary-fixed font-bold">LKR 5,200</span>
+            </div>
+            <button data-add-to-cart="true" data-product-title="All-Weather Sports Duffle & Gear Bag 45L" data-product-price="LKR 5,200" class="w-full py-1.5 sm:py-2 bg-primary-container hover:bg-inverse-primary text-on-primary-container text-[11px] sm:text-xs font-bold uppercase rounded-lg flex items-center justify-center gap-1 transition-all shadow-sm cursor-pointer">
+              <span>Add</span><span class="material-symbols-outlined text-[14px] sm:text-[16px]">add</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- 5-STEP CUSTOM SUBLIMATION PROCESS & INTERACTIVE MINI CONFIGURATOR -->
 <section class="w-full py-space-xl bg-surface" id="sublimation-flow">
@@ -999,7 +1025,6 @@ include __DIR__ . '/php/header.php';
       document.getElementById('newsletterSuccess').classList.remove('hidden');
     }
   </script>
-</div></main>
 </main>
 
 <?php

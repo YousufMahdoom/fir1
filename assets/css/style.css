@@ -334,10 +334,6 @@ img, svg, video, canvas {
   .tilt-card {
     transform: none !important;
   }
-  
-  button, a, input, select {
-    min-height: 40px;
-  }
 }
 
 /* Small to Medium Mobile Phones (≤640px) */
